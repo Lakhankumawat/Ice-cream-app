@@ -44,7 +44,7 @@ class Body extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: SvgPicture.asset(
-                        'assets/images/minipopsicle-1.svg',
+                        'assets/images/minipop.svg',
                         height: getProportionateScreenHeight(52),
                         width: getProportionateScreenWidth(50),
                       ),

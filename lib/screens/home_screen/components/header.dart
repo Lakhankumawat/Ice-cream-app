@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ice_cream/utils/constants.dart';
 import 'package:ice_cream/utils/size_config.dart';
+import 'package:ice_cream/screens/cart_screen/cart_screen.dart';
 
 class CustomHeader extends StatelessWidget {
   const CustomHeader({Key? key}) : super(key: key);
@@ -21,8 +22,11 @@ class CustomHeader extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontSize: getProportionateScreenWidth(30)),
             ),
-            Icon(
-              FontAwesomeIcons.shoppingBag,
+            IconButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(CartScreen.routeName);
+              },
+              icon: Icon(FontAwesomeIcons.shoppingBag),
               color: kDisableButtonColor,
             ),
           ],
