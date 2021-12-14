@@ -32,6 +32,8 @@ A new Flutter project.
 </table>
 
 
+## I know i have done huge blunders in code but don't worry they will be removed soon .🙃
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
