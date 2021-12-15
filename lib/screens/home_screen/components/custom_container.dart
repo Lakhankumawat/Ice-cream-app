@@ -1,57 +1,50 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 
+//rgba(252, 206, 221, 1)
 class RPSCustomPainter extends CustomPainter {
+  final Color? canvasColor;
+  RPSCustomPainter({this.canvasColor});
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint0 = Paint()
-      ..color = const Color.fromARGB(1, 128, 230, 231)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1;
-
-    Path path0 = Path();
-    path0.moveTo(size.width * 0.7800000, size.height * 0.7900000);
-
-    canvas.drawPath(path0, paint0);
-
-    Paint paint1 = Paint()
-      ..color = const Color.fromARGB(255, 128, 220, 227)
+      ..color = canvasColor as Color
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
 
-    Path path1 = Path();
-    path1.moveTo(size.width * 0.2075000, size.height * 0.3571429);
-    path1.cubicTo(
-        size.width * 0.2627083,
-        size.height * 0.2839286,
-        size.width * 0.6416667,
-        size.height * 0.2800000,
-        size.width * 0.7075000,
-        size.height * 0.3585714);
-    path1.cubicTo(
-        size.width * 0.7216667,
-        size.height * 0.4017857,
-        size.width * 0.7333333,
-        size.height * 0.7396429,
-        size.width * 0.7058333,
-        size.height * 0.7842857);
-    path1.cubicTo(
-        size.width * 0.6672917,
-        size.height * 0.8442857,
-        size.width * 0.2468750,
-        size.height * 0.8457143,
-        size.width * 0.2108333,
-        size.height * 0.7885714);
-    path1.cubicTo(
-        size.width * 0.1793750,
-        size.height * 0.7425000,
-        size.width * 0.1914583,
-        size.height * 0.4082143,
-        size.width * 0.2075000,
-        size.height * 0.3571429);
-    path1.close();
+    Path path0 = Path();
+    path0.moveTo(size.width * 0.7072833, size.height * 0.2822857);
+    path0.cubicTo(
+        size.width * 0.6641000,
+        size.height * 0.1923429,
+        size.width * 0.1400500,
+        size.height * 0.1981571,
+        size.width * 0.1278500,
+        size.height * 0.2842000);
+    path0.cubicTo(
+        size.width * 0.0879667,
+        size.height * 0.4212143,
+        size.width * 0.0844667,
+        size.height * 0.7128429,
+        size.width * 0.1250083,
+        size.height * 0.8576286);
+    path0.cubicTo(
+        size.width * 0.1358417,
+        size.height * 0.9497714,
+        size.width * 0.6741750,
+        size.height * 0.9526143,
+        size.width * 0.7061250,
+        size.height * 0.8604714);
+    path0.cubicTo(
+        size.width * 0.7291250,
+        size.height * 0.8109286,
+        size.width * 0.7308417,
+        size.height * 0.3283571,
+        size.width * 0.7072833,
+        size.height * 0.2822857);
+    path0.close();
 
-    canvas.drawPath(path1, paint1);
+    canvas.drawPath(path0, paint0);
   }
 
   @override
