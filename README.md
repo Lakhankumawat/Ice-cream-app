@@ -23,13 +23,14 @@ A new Flutter project.
       <img width="400" src="https://user-images.githubusercontent.com/55774240/145999421-a9cf8258-af67-4f17-bfe0-f19eb4a68b6c.jpg" alt="prev1">
     </td>
     <td>
-      <img width="400" src="https://user-images.githubusercontent.com/55774240/145999500-9500eff9-89aa-4446-b391-a364fec25120.jpg" alt="prev1">
+      <img width="400" src="https://user-images.githubusercontent.com/55774240/146145622-6b88e89b-bbe3-4dd2-898e-5f4c0ee335ea.jpg" alt="prev2">
     </td>
     <td>
-       <img width="400" src="https://user-images.githubusercontent.com/55774240/145999514-37d89ba5-7e44-4535-a22f-a0fcc3edb236.jpg" alt="prev1">
+       <img width="400" src="https://user-images.githubusercontent.com/55774240/146145633-d2fbbca8-927d-47f8-b61d-d8fdc69af760.jpg" alt="prev3">
     </td>
   </tr>
 </table>
+
 
 
 ## I know i have done huge blunders in code but don't worry they will be removed soon .🙃
