@@ -11,6 +11,28 @@ A new Flutter project.
 ## [Dribble](https://dribbble.com/shots/12207071-Popsicle-Online-food-delivery)
 ![1](https://user-images.githubusercontent.com/55774240/144241381-90735197-b417-48f8-b6a5-a078e2deec60.png)
 
+## My Progress 
+
+> Well i am too lazy so please hit that fork and contribute if you want to see it complete 
+
+> Any suggestions are most welcomed
+
+<table>
+  <tr>
+    <td>
+      <img width="400" src="https://user-images.githubusercontent.com/55774240/145999421-a9cf8258-af67-4f17-bfe0-f19eb4a68b6c.jpg" alt="prev1">
+    </td>
+    <td>
+      <img width="400" src="https://user-images.githubusercontent.com/55774240/145999500-9500eff9-89aa-4446-b391-a364fec25120.jpg" alt="prev1">
+    </td>
+    <td>
+       <img width="400" src="https://user-images.githubusercontent.com/55774240/145999514-37d89ba5-7e44-4535-a22f-a0fcc3edb236.jpg" alt="prev1">
+    </td>
+  </tr>
+</table>
+
+
+## I know i have done huge blunders in code but don't worry they will be removed soon .🙃
 
 ## Getting Started
 
