@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ice_cream/screens/cart_screen/components/checkout.dart';
 import 'components/body.dart';
 
 class CartScreen extends StatelessWidget {
@@ -8,8 +9,8 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Body(),
+      bottomNavigationBar: CheckoutCard(),
     );
   }
 }

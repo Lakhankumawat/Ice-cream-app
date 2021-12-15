@@ -98,7 +98,9 @@ class Body extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.white,
                         ),
-                        child: Image.asset('assets/images/homecontainer.png'),
+                        child: Image.asset(
+                          'assets/images/homecontainer.png',
+                        ),
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
