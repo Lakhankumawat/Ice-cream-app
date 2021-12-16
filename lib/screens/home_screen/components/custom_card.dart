@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ice_cream/utils/size_config.dart';
-
+import 'custom_button.dart';
 import 'custom_container.dart';
 
 class CustomCard extends StatelessWidget {
@@ -10,6 +10,7 @@ class CustomCard extends StatelessWidget {
   final String? desc;
   final String? flavour;
   final String? name;
+  final Color? buttonColor;
   final String? price;
   const CustomCard(
       {Key? key,
@@ -18,33 +19,20 @@ class CustomCard extends StatelessWidget {
       this.flavour,
       this.name,
       this.price,
-      this.image})
+      this.image,
+      this.buttonColor})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Positioned(
-        //   top: getProportionateScreenHeight(4),
-        //   left: getProportionateScreenWidth(3),
-        //   child: ElevatedButton(
-        //     onPressed: () {},
-        //     child: Icon(
-        //       FontAwesomeIcons.solidHeart,
-        //       size: 15,
-        //     ),
-        //     style: ElevatedButton.styleFrom(
-        //       shape: CircleBorder(),
-        //     ),
-        //   ),
-        // ),
         SizedBox(
           height: (SizeConfig.screenHeight as double) * 0.60,
-          width: (SizeConfig.screenWidth as double) * 0.8,
+          width: (SizeConfig.screenWidth as double) * 0.9,
           child: CustomPaint(
             size: Size(
-                SizeConfig.screenWidth as double,
+                SizeConfig.screenHeight as double,
                 ((SizeConfig.screenWidth as double) * 0.9)
                     .toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
             painter: RPSCustomPainter(canvasColor: cardColor),
@@ -52,7 +40,7 @@ class CustomCard extends StatelessWidget {
         ),
         Positioned(
           top: getProportionateScreenHeight(85),
-          left: getProportionateScreenWidth(104),
+          left: getProportionateScreenWidth(130),
           child: Container(
             padding: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
@@ -73,25 +61,18 @@ class CustomCard extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          // child: ElevatedButton(
-          //   onPressed: () {},
-          //   child: Icon(
-          //     FontAwesomeIcons.solidHeart,
-          //     size: 15,
-          //   ),
-          //   style: ElevatedButton.styleFrom(
-          //     shape: CircleBorder(),
-          //     boxShadow: [
-          //       BoxShadow(
-          //         color: Colors.grey.withOpacity(0.5),
-          //         spreadRadius: 5,
-          //         blurRadius: 7,
-          //         offset: Offset(0, 3), // changes position of shadow
-          //       ),
-          //     ],
-          //   ),
-          // ),
         ),
+        // Positioned(
+        //   top: getProportionateScreenHeight(85),
+        //   right: getProportionateScreenWidth(37),
+        //   child: GestureDetector(
+        //     onTap: () => print('Do Something'),
+        //     child: CustomPaint(
+        //       size: Size(160, 110),
+        //       painter: CustomButton(),
+        //     ),
+        //   ),
+        // ),
         Positioned(
           top: getProportionateScreenHeight(100),
           right: 90,
@@ -128,8 +109,24 @@ class CustomCard extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(flavour as String),
-                      Text('\$$price'),
+                      Text(
+                        flavour as String,
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: getProportionateScreenWidth(18)),
+                      ),
+                      SizedBox(
+                        width: getProportionateScreenWidth(50),
+                      ),
+                      Text(
+                        '\$$price',
+                        style: TextStyle(
+                            fontFamily: 'Lobster',
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: getProportionateScreenWidth(18)),
+                      ),
                     ],
                   ),
                   Text(
@@ -138,23 +135,44 @@ class CustomCard extends StatelessWidget {
                         fontFamily: 'Lobster',
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
-                        fontSize: getProportionateScreenWidth(15)),
+                        fontSize: getProportionateScreenWidth(17)),
                   ),
                   SizedBox(
                     height: getProportionateScreenHeight(10),
                   ),
-                  Text(
-                    desc as String,
-                    maxLines: 5,
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      letterSpacing: 1,
-                      fontSize: 10,
-                      fontWeight: FontWeight.w600,
+                  SizedBox(
+                    height: 100,
+                    width: 170,
+                    child: Text(
+                      desc as String,
+                      maxLines: 7,
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        letterSpacing: 1,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                   ),
                   SizedBox(
                     height: getProportionateScreenHeight(10),
+                  ),
+                  ElevatedButton(
+                    child: Text(
+                      'Order',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0.0,
+                      padding: EdgeInsets.symmetric(horizontal: 28),
+                      primary: buttonColor,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12), // <-- Radius
+                      ),
+                    ),
                   ),
                 ],
               ),
