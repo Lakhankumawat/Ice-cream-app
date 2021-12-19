@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ice.ice_cream">
    <application
-        android:label="ice_cream"
+        android:label="LickIt"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

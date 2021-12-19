@@ -1,6 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ice_cream/screens/profile/profile_screen.dart';
 import 'components/body.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,28 +13,21 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 0;
-  //PageController? _pageController;
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  int _currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(child: Body()),
         bottomNavigationBar: BottomNavyBar(
-          selectedIndex: _selectedIndex,
+          selectedIndex: _currentIndex,
           showElevation: true, // use this to remove appBar's elevation
-          onItemSelected: (index) => setState(() {
-            _selectedIndex = index;
-            // _pageController!.animateToPage(index,
-            //     duration: Duration(milliseconds: 300), curve: Curves.ease);
-          }),
+          onItemSelected: (index) {
+            setState(() => _currentIndex = index);
+            if (index == 3) {
+              Navigator.of(context).pushNamed(ProfileScreen.routeName);
+            }
+          },
           items: [
             BottomNavyBarItem(
               icon: Icon(FontAwesomeIcons.home),
