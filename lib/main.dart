@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'LickIt Baby',
+      title: 'LickIt',
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),

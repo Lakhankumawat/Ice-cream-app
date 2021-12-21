@@ -77,12 +77,14 @@ class Body extends StatelessWidget {
               SizedBox(
                 height: getProportionateScreenHeight(20),
               ),
-              Container(
-                width: getProportionateScreenWidth(300),
-                decoration: BoxDecoration(
-                  color: Colors.white,
+              Material(
+                color: Colors.transparent,
+                child: SizedBox(
+                  width: getProportionateScreenWidth(300),
+                  child: Image.asset(
+                    'assets/images/choco-vanilla2.png',
+                  ),
                 ),
-                child: Image.asset('assets/images/choco-vanilla.png'),
               ),
             ],
           ),
