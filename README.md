@@ -33,7 +33,7 @@ A new Flutter project.
 
 
 
-## I know i have done huge blunders in code but don't worry they will be removed soon .🙃
+## Likie to the repo will be greatful, it is free 🙃
 
 ## Getting Started
 
