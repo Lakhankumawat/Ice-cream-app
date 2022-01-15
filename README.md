@@ -17,7 +17,7 @@ A new Flutter project.
 
 > Any suggestions are most welcomed
 
-<table>
+<!-- <table>
   <tr>
     <td>
       <img width="400" src="https://user-images.githubusercontent.com/55774240/145999421-a9cf8258-af67-4f17-bfe0-f19eb4a68b6c.jpg" alt="prev1">
@@ -29,7 +29,7 @@ A new Flutter project.
        <img width="400" src="https://user-images.githubusercontent.com/55774240/146145633-d2fbbca8-927d-47f8-b61d-d8fdc69af760.jpg" alt="prev3">
     </td>
   </tr>
-</table>
+</table> -->
 
 
 
